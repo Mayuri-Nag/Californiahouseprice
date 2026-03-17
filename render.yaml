@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: california-house-price
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
